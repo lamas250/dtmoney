@@ -3,6 +3,7 @@ import { Container } from "./styles";
 import EntradaImg from '../../assets/income.svg';
 import SaidaImg from '../../assets/outcome.svg';
 import TotalImg from '../../assets/total.svg';
+import { useEffect, useState } from "react";
 
 export function Sumary(){
   return (

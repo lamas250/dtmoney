@@ -68,32 +68,31 @@ const colors = {
 
 export const RadioBox = styled.button<RadioBoxProps>`
   height: 4rem;
-    border: 1px solid #d7d7d7;
-    border-radius: 0.25rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.25rem;
 
-    background: ${(props) => props.isActive 
-      ? transparentize(0.9, colors[props.activeColor]) 
-      : 'transparent'};
+  background: ${(props) => props.isActive 
+    ? transparentize(0.9, colors[props.activeColor]) 
+    : 'transparent'};
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &:hover {
+    border-color: #aaa;
+  }
 
-    &:hover {
-      border-color: #aaa;
-    }
+  img {
+    width: 20px;
+    height: 20px
+  }
 
-    img {
-      width: 20px;
-      height: 20px
-    }
-
-    span {
-      display: inline-block;
-      margin-left: 1rem;
-      font-size: 1rem;
-      color: var(--text-title);
-    }
+  span {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: var(--text-title);
+  }
 
 `;
